@@ -1,0 +1,30 @@
+{
+  "name": "omni-utils",
+  "version": "1.0.0",
+  "description": "Second try on OMNI Utils",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leanne707/omni-utils-v2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "binary-uuid": "2.0.3",
+    "moment-timezone": "0.5.34"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.5",
+    "rimraf": "3.0.2",
+    "typescript": "4.5.4"
+  },
+  "scripts": {
+    "build": "rimraf ./lib && tsc",
+    "layer:clean": "touch utils-layer.zip && rm utils-layer.zip",
+    "layer:set": "cp ./package.json lib/package.json && cd lib && npm install --production --ignore-scripts --no-package-lock",
+    "layer:make": "rimraf nodejs && mkdir nodejs && mkdir nodejs/node_modules && mkdir nodejs/node_modules/omni-utils && cp -r ./lib nodejs/node_modules/omni-utils",
+    "layer:zip": "zip -r utils-layer.zip nodejs; rm -r nodejs",
+    "layer:create": "npm run layer:clean && npm run layer:set && npm run layer:make && npm run layer:zip",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
