@@ -11,20 +11,15 @@
   "license": "ISC",
   "dependencies": {
     "binary-uuid": "2.0.3",
-    "moment-timezone": "0.5.34"
+    "moment-timezone": "0.5.33"
   },
   "devDependencies": {
-    "@types/node": "17.0.5",
+    "@types/node": "14.17.15",
     "rimraf": "3.0.2",
-    "typescript": "4.5.4"
+    "typescript": "3.9.10"
   },
   "scripts": {
     "build": "rimraf ./lib && tsc",
-    "layer:clean": "touch utils-layer.zip && rm utils-layer.zip",
-    "layer:set": "cp ./package.json lib/package.json && cd lib && npm install --production --ignore-scripts --no-package-lock",
-    "layer:make": "rimraf nodejs && mkdir nodejs && mkdir nodejs/node_modules && mkdir nodejs/node_modules/omni-utils && cp -r ./lib nodejs/node_modules/omni-utils",
-    "layer:zip": "zip -r utils-layer.zip nodejs; rm -r nodejs",
-    "layer:create": "npm run layer:clean && npm run layer:set && npm run layer:make && npm run layer:zip",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
