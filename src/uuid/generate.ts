@@ -1,4 +1,4 @@
-import createBinaryUUID from 'binary-uuid'
+import { createBinaryUUID } from '..'
 
 /**
  * Generates new buffer

@@ -1,2 +1,3 @@
-# omni-utils-v2
+# omni-utils
+
 Second try on OMNI Utils
