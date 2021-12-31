@@ -1,5 +1,5 @@
 /**
- * Creates the timestamp for the current day
+ * Creates timestamp
  *
  * @return {*}  {number}
  */
