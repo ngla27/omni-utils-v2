@@ -1,5 +1,15 @@
+# root
 src
-tsconfig.json
+types
+package-lock.json
+node_modules
+
+# config
 .vscode
+tsconfig.json
+tsconfig.build.json
+
+# .ignore
 .gitignore
 .npmignore
+.prettierignore
