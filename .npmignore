@@ -8,8 +8,11 @@ node_modules
 .vscode
 tsconfig.json
 tsconfig.build.json
-
-# .ignore
 .gitignore
 .npmignore
 .prettierignore
+
+# unit testing
+test
+jest.config.ts
+jest.config.js
