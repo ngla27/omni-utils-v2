@@ -1,6 +1,6 @@
 {
   "name": "omni-utils",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "Second try on OMNI Utils",
   "main": "./dist/index.js",
   "repository": {
