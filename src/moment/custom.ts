@@ -1,7 +1,8 @@
 import { orderBy } from 'lodash'
 import { Moment } from 'moment-timezone'
-import { generateTimestamp, momentFormatter, _moment } from '..'
 import { UnitInMilliseconds } from '../../declarations/enum/moment'
+import { momentFormatter, _moment } from './convert'
+import { generateTimestamp } from './generate'
 
 /**
  * Check if given time is before the fund's cut off time inputted

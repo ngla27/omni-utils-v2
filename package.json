@@ -9,7 +9,8 @@
     "url": "git+https://github.com/leanne707/omni-utils-v2.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "UNLICENSED",
+  "private": true,
   "dependencies": {
     "lodash": "4.17.21",
     "moment-timezone": "0.5.33",
